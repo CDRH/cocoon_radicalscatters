@@ -1,0 +1,20 @@
+AuthName "Password prompt"
+AuthUserFile /web/cdrh/rspasswords
+AuthType Basic
+Deny from all
+Require valid-user
+Allow from 129.93 UNL
+Allow from 129.32 155.247 Temple University
+Allow from 72.33 128.104 128.105 144.92 146.151 192.12.224 192.160.134 192.172.224 198.133 University of Wisconsin Madison
+Allow from 134.126 James Madison University
+Allow from 128.252 Washington University, St. Louis, MO
+Allow from 129.107 University of Texas at Arlington
+Allow from 128.8 129.2 131.118 206.196 136.160 University of Maryland, College Park
+Allow from 128.205 205.232 SUNY Buffalo
+Allow from 198.102 64.128.172 Richland, Washington ; Amsterdam, New York
+Allow from 192.168.2.196 (no result)
+Allow from 216.145.160.0/19 University of Houston - Downtown
+Allow from 128.12 134.79 171.64 171.65 171.66 171.67 192.68.191 198.129 Stanford University
+Satisfy Any
+ErrorDocument 403 /projects/radicalscatters.php
+ErrorDocument 401 /projects/radicalscatters.php

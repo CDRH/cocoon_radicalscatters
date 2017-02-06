@@ -1,0 +1,13 @@
+/* CSS Document */
+
+em.undefined {background: red;}
+
+em {font-style: inherit;}
+em.smallcaps {font-variant: small-caps;}
+em.underlined {text-decoration: underline; }
+em.italics {font-style: italic;}
+em.doubleUnderline {border-bottom: double 3px;}
+em.title {font-style: italic;}
+
+
+span.striked {text-decoration: line-through; }

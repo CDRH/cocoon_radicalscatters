@@ -1,0 +1,192 @@
+/* @override http://segonku.unl.edu/cocoon/radicalscatters/css/rsc.splash.css */
+
+/* CSS Document */
+
+body {
+	font-family: verdana, "Trebuchet MS", trebuchet, Arial, Helvetica, sans-serf;
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #3C382F;
+	background-image: url(../images/template/main_bg.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+}
+a {padding:5px;}
+a:link {
+	text-decoration: none;
+	color: #CBC7BC;
+	margin:2px;
+}
+a:visited { text-decoration: none; color: #a59681;}
+a:hover {
+	text-decoration: none;
+	color: #fff;
+	background-color: #25251D;
+	padding: 5px;
+}
+
+
+
+/*	
+ *	  Prefooter
+ */
+div#prefooter {
+	clear: both;
+	padding: 60px 20px 20px 20px;
+	margin-top: 155px;
+	margin-right: -20px;
+	margin-bottom: -20px;
+	margin-left: -20px;
+	color: #fff;
+	text-align: left;
+}
+
+div#prefooter li{
+ }
+
+div#prefooter li a{
+ }
+
+/* Footer */
+
+div#footer {
+	clear: both;
+	padding: 20px 0 0 0 ;
+	margin-top: 20px;
+	margin-right: -20px;
+	margin-bottom: -20px;
+	margin-left: -20px;
+	color: #EEEEDD;
+	text-align: right;
+}
+
+div#prefooter h1 {
+	color: #EDEEDC;
+
+}
+
+div#footer ul{
+	margin-left: 20px;
+	margin-right: 0px;
+}
+
+div#footer ul li{
+	display: inline;
+	margin-left: 20px;
+}
+
+
+div#prefooter ul li{
+	color: #D4CCC1;
+	padding: 0px;
+	margin-top: -10px;
+	margin-right: 0px;
+	margin-bottom: 20px;
+	margin-left: -30px;
+	list-style-position: outside;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+ 
+ 
+/*	
+ *	  Main content styling
+ */
+ h1 { font-size: 2.4em; margin-bottom: .5em; font-family: Georgia, "Times New Roman", Times, serif; color: #392B1A }
+ h2 { font-size: 1.5em; margin-bottom: .5em; color: #392B1A }
+ h3 { font-size: 1em; font-weight: bold; margin-bottom: .5em; }
+ p { margin: 10px 0px 20px 0px; line-height: 1.7em; }
+ ul { margin: 10px 30px 15px 30px; }
+
+ 
+ 
+
+ 
+
+ 
+
+
+
+dd {
+	margin-left: 50px;
+}
+dt {
+	margin-top: 15px;
+}
+
+
+
+
+
+#splashinit {
+	height: 45px;
+}
+#splash {}
+#splash img {
+	margin: 0px;
+	float: left;
+}
+.splashcredits {
+	margin-left: 550px;
+
+}
+
+
+
+h1 img {
+	padding-top:40px;
+}
+
+div.splashcredits h1 {
+	padding-top: 40px;
+}
+
+p.subscription-info {
+	width: 350px;
+	float: left;
+	font-size: 1.3em;
+	padding-bottom: 20px;
+}
+div.login {
+	padding-left: 40px;
+	width: 610px;
+	float:right;
+	font-size: 1em;
+	padding-bottom: 20px;
+}
+
+p.siteinfo {
+	clear: both;
+	border-top: solid 1px #ac9a84;
+	margin: 0 0 0 0;
+	padding: 30px 0 0 0;
+}
+div.login p {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+div.login td {
+	padding: 0 0 10px 0;
+}
+
+div.login label {
+	padding: 0 10px 0 0;
+}
+
+input
+ {
+	color:#666;
+	margin:0 0 7px 0;
+	border:1px solid #d8d8d8;
+	width:100px;
+	-moz-border-radius:9px;
+	-webkit-border-radius:9px;
+	background-color: #efefef;
+	padding:3px 10px;
+}
+
+input#upsswd, input#uname {
+	width:220px;
+}

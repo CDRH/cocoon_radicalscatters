@@ -1,0 +1,426 @@
+<?xml version="1.0"?>
+<!-- Radical Scatters user IP.xml -->
+<?xml-stylesheet type="text/xsl" href="accesslist.xsl"?>
+<authentication>
+
+    <users>
+
+        <user name="marta" password="radicalmarta">
+            <name>UNL</name>
+            <contact>wernerm@dyc.edu</contact>
+            <date>2010</date>
+        </user>
+
+        <user name="zino" password="radicalzino">
+            <name>Dominique Zino</name>
+            <contact>dfzino@gmail.com</contact>
+            <date>2013</date>
+        </user>
+
+        <user name="beatrice" password="radicalbeatrice">
+            <name>Beatrice Jacobson</name>
+            <contact>jacobsonbeatricef@sau.edu</contact>
+            <date>2013</date>
+        </user>
+
+        <user name="poethouse" password="radicalriverterrace">
+            <name>Poet House</name>
+            <contact>Bleu@Poetshouse.org</contact>
+            <date>2011</date>
+        </user>
+
+        <user name="vcfa" password="radicalvermont">
+            <name>Vermont College of Fine Arts</name>
+            <contact>Jim.Nolte@vcfa.edu</contact>
+            <date>2011</date>
+        </user>
+
+        <user name="alexandra" password="alexscatters">
+            <name>Alexandra Socarides</name>
+            <contact>socaridesa@missouri.edu</contact>
+            <date>2011</date>
+        </user>
+
+        <user name="kdurkin" password="kdurkinradscatters">
+            <name>Katelyn Durkin</name>
+            <contact>kad5ep@email.virginia.edu</contact>
+            <date>Dec 4, 2012</date>
+        </user>
+        <!-- Paid 2013 -->
+
+        <user name="Adrian Wisnicki">
+            <name>Adrian Wisnicki</name>
+            <contact>awisnicki@yahoo.com</contact>
+            <date>Sep, 13 2013</date>
+            <ip>76.84.27.82</ip>
+        </user>
+        <!-- Paid 2013 -->
+
+        <user name="barsic" password="barsicscatters">
+            <name>Branka Arsic</name>
+            <contact>ba2406@columbia.edu</contact>
+            <date>June 2, 2014</date>
+            <ip>160.39.35.45</ip>
+        </user>
+        <!-- Invoice sent 6/2 - Payment Pending -->
+
+        <user name="Ohio_University">
+            <name>Debra Pierson</name>
+            <contact>piersond@ohio.edu</contact>
+            <ip>132.235.136-137.0-128</ip>
+            <ip>132.235.137.130-255</ip>
+            <ip>132.235.0-91.*</ip>
+            <ip>132.235.93-99.*</ip>
+            <ip>132.235.102-119.*</ip>
+            <ip>132.235.122-127.*</ip>
+            <ip>132.235.138.0-64</ip>
+            <ip>132.235.138.128-255</ip>
+            <ip>132.235.139.128-255</ip>
+            <ip>132.235.140.0-127</ip>
+            <ip>132.235.141-189.*</ip>
+            <ip>132.235.192-255.*</ip>
+            <ip>64.247.64-127.*</ip>
+            <ip>132.235.61.22</ip>
+            <!-- ADDED BY JWURST -->
+            <!-- Paid 2012 -->
+            <!-- Paid 2013 -->
+        </user>
+
+        <user name="New College of Florida">
+            <name>Tara North</name>
+            <contact>libacq@ncf.edu</contact>
+            <ip>192.5.2.150.</ip>
+            <ip>131.247.0-142.*</ip>
+            <ip>131.247.144-145.*</ip>
+            <ip>131.247.147-184.*</ip>
+            <ip>131.247.187-255.*</ip>
+            <!-- ADDED BY JWURST -->
+            <!-- Paid 2013 -->
+        </user>
+
+        <user name="University of Washington">
+            <name>David Bilski</name>
+            <contact>bilski@u.washington.edu</contact>
+            <ip>108.179.128-191.*</ip>
+            <ip>128.95.0-103.*</ip>
+            <ip>128.95.104.0-247</ip>
+            <ip>128.95.105-255.*</ip>
+            <ip>128.208.*.*</ip>
+            <ip>140.142.*.*</ip>
+            <ip>173.250.128-255.*</ip>
+            <ip>198.48.64-95.*</ip>
+            <ip>205.175.96-127.*</ip>
+            <ip>216.186.67-71.*</ip>
+            <ip>216.186.83.*</ip>
+            <ip>69.91.128-255.*</ip>
+            <!-- ADDED BY JWURST -->
+            <!-- Paid 2012 -->
+            <!-- Paid 2013 -->
+        </user>
+
+        <user name="psu" password="scatterspsu">
+            <name>Penn State University</name>
+            <contact>jaj115@psu.edu</contact>
+            <ip>64.74.144.*</ip>
+            <ip>66.71.1-127.*</ip>
+            <ip>75.102.64-127.*</ip>
+            <ip>128.118.*.*</ip>
+            <ip>130.203.*.*</ip>
+            <ip>146.186.*.*</ip>
+            <ip>150.231.*.* </ip>
+            <ip>192.5.157-161.*</ip>
+            <ip>192.112.253.*</ip>
+            <!-- ADDED BY JWURST -->
+            <!-- PAID 2013 -->
+						<!-- Paid 2014 -->
+        </user>
+
+        <user name="MIT">
+            <name>Sally Richter - E-Resources Acquisitions Associate</name>
+            <contact>spr@mit.edu</contact>
+            <ip>18.*.*.*</ip>
+            <ip>128.30.*.*</ip>
+            <ip>128.31.*.*</ip>
+            <ip>128.52.*.*</ip>
+            <ip>129.55.*.*</ip>
+            <ip>192.52.61-66.*</ip>
+            <ip>198.125.160-163.*</ip>
+            <ip>198.125.176-191.*</ip>
+						<!-- Paid 2014 -->
+        </user>
+
+        <user name="Kent State">
+            <name>Paula Wright - Serials Manager</name>
+            <contact>prwright@kent.edu</contact>
+            <ip>131.123.*.*</ip>
+            <ip>131.123.0.0 – 131.123.255.255</ip>
+        </user>
+
+
+        <!-- Paid 2010 -->
+        <user name="unl" password="cdrh">
+            <name>UNL</name>
+            <contact>cdrh@unl.edu</contact>
+            <date>2010</date>
+            <ip>129.93.*.*</ip>
+            <ip>129.93.10.44</ip>
+        </user>
+
+        <user name="lweakly" password="scattersmaine">
+            <name>Laura Weakly</name>
+            <contact>lweakly2@unl.edu</contact>
+            <date>2010</date>
+
+            <ip>129.93.*.*</ip>
+        </user>
+
+        <user name="ygarcia" password="scattersmaine">
+            <name>Yvonne Garcia</name>
+            <contact>yvonne.garcia@maine.edu</contact>
+            <ip></ip>
+        </user>
+
+        <user name="JamesMadison">
+            <name>James Madison University</name>
+            <contact>hannahmg@jmu.edu</contact>
+            <date>201004</date>
+            <ip>134.126.*.*</ip>
+						<!-- Paid 2014 -->
+        </user>
+
+        <user namee="Tulane">
+            <name>Tulane University</name>
+            <contact>grobins@tulane.edu</contact>
+            <ip>129.81.*.*</ip>
+						<!-- Paid 2014 -->
+        </user>
+
+        <user name="ClaremontCollege">
+            <name>Claremont College</name>
+            <contact>Brenda_Weaver@cuc.claremont.edu</contact>
+            <ip>134.173.1-239.*</ip>
+            <ip>134.173.244-255.*</ip>
+            <ip>207.170.234.249</ip>
+            <ip>132.174.255.86</ip>
+        </user>
+
+        <user name="D'YouvilleCollege">
+            <name>D'Youville College</name>
+            <contact>mcclestj@dyc.edu</contact>
+            <ip>66.251.84.*</ip>
+        </user>
+
+        <user name="MoreheadState">
+            <name>Morehead State University</name>
+            <contact>my.howard@moreheadstate.edu</contact>
+            <date>201106</date>
+            <ip>147.133.*.*</ip>
+        </user>
+
+        <user name="SUNYBuffalo">
+            <name>SUNY Buffalo</name>
+            <contact>unlsdb@buffalo.edu</contact>
+            <date>2010</date>
+            <ip>128.205.*.*</ip>
+            <ip>205.232.*.*</ip>
+            <ip>67.20.192-223.*</ip>
+            <ip>67.99.160-171.*</ip>
+        </user>
+
+        <user name="NYU">
+            <name>New York University</name>
+            <contact>bill.maltarich@nyu.edu</contact>
+            <date>2011</date>
+            <ip>66.251.105.0-255</ip> <!-- nyu.edu -->
+            <ip>128.122.*.*</ip> <!-- nyu.edu -->
+            <ip>192.76.177.124-127</ip> <!-- nyu.edu -->
+            <ip>193.205.158.0-128</ip> <!-- NYU in Florence -->
+            <ip>193.206.104.0-255</ip> <!-- NYU in Florence -->
+            <ip>195.113.94.0-255</ip> <!-- NYU in Prague -->
+            <ip>212.219.93.0-255</ip> <!-- NYU in London -->
+            <ip>203.126.200.0-255</ip> <!-- NYU Tisch in Singapore -->
+            <ip>216.165.*.*</ip>
+            <ip>128.238.*.*</ip> <!-- Polytechnic Institute of NYU -->
+        </user>
+
+        <user name="houston">
+            <name>University of Houston</name>
+            <contact>harper@uhd.edu</contact>
+            <date>2010</date>
+            <ip>216.145.*.*</ip>
+        </user>
+
+        <user name="cornell">
+            <name>Cornell University</name>
+            <contact>jtk1@cornell.edu</contact>
+            <contact>erlm-l@cornell.edu</contact>
+            <date>2011</date>
+            <ip>24.97.98.201-202</ip>
+            <ip>128.84.*.*</ip>
+            <ip>128.253.*.*</ip>
+            <ip>132.236.*.*</ip>
+            <ip>205.128.136-137.*</ip>
+            <ip>66.95.127.*</ip>
+            <ip>24.39.199.210</ip>
+            <ip>69.95.145.1-37</ip>
+            <ip>206.101.121.226</ip>
+            <ip>205.232.123.181-190</ip>
+            <ip>192.065.176.*</ip>
+            <ip>192.231.93.*</ip>
+            <ip>209.4.89.82-94</ip>
+            <ip>38.117.133.*</ip>
+            <ip>216.7.9.192-254</ip>
+            <ip>74.10.186.0-23</ip>
+            <ip>205.232.152.0-22</ip>
+            <ip>205.232.120.0-21</ip>
+            <ip>140.251.*.*</ip>
+            <ip>157.139.*.*</ip>
+            <ip>207.162.240-255.*</ip>
+            <ip>205.227.90.105</ip>
+        </user>
+
+        <!-- End: Paid 2010 -->
+
+        <!-- Previous paid subscribers -->
+        <user name="temple">
+            <name>J. Brian Schoolar, Temple University</name>
+            <contact>tuleres@temple.edu</contact>
+            <ip>129.32.*.*</ip>
+            <ip>155.247.*.*</ip>
+        </user>
+
+        <user name="wisconsin">
+        <!-- Note- they last paid in 2006, we should send out another invoice. Updated IP's in 2010 as part of the switch to cocoon -Karin -->
+            <name>Christine Kline, University of Wisconsin-Madison</name>
+            <contact>ctslru@library.wisc.edu</contact>
+            <ip>72.33.*.*</ip>
+            <ip>128.104.0-24.*</ip>
+            <ip>128.104.26-75.*</ip>
+            <ip>128.104.78-223.*</ip>
+            <ip>128.104.226-254.*</ip>
+            <ip>128.105.*.*</ip>
+            <ip>144.92.0-17.*</ip>
+            <ip>144.92.19-43.*</ip>
+            <ip>144.92.44.0-63</ip>
+            <ip>144.92.44.72-255</ip>
+            <ip>144.92.45-80.*</ip>
+            <ip>144.92.81.0-127</ip>
+            <ip>144.92.82-88.*</ip>
+            <ip>144.92.89.0-95</ip>
+            <ip>144.92.89.128-255</ip>
+            <ip>144.92.90-91.*</ip>
+            <ip>144.92.93-255.*</ip>
+            <ip>146.151.0-191.*</ip>
+            <ip>146.151.224-255.*</ip>
+            <ip>192.12.224.*</ip>
+            <ip>192.160.134.*</ip>
+            <ip>198.133.224-225.*</ip>
+        </user>
+
+        <user name="washu">
+            <name>Grace Hamilton, Washington University</name>
+            <contact>gracehamilton@wustl.edu</contact>
+            <ip>128.252.*.*</ip>
+        </user>
+
+        <user name="texas">
+            <name>Kona Kelly, University of Texas at Arlington</name>
+            <contact>KonaKelly@uta.edu</contact>
+            <ip>129.107.*.*</ip>
+        </user>
+
+
+        <user name="maryland">
+            <name>University of Maryland, College Park</name>
+            <contact/>
+            <date>201004</date>
+            <ip>128.8.0-7.*</ip>
+            <ip>128.8.10-15.*</ip>
+            <ip>128.8.17-24.*</ip>
+            <ip>128.8.26-93.*</ip>
+            <ip>128.8.96-255.*</ip>
+            <ip>129.2.0-18.*</ip>
+            <ip>129.2.19.0-36</ip>
+            <ip>129.2.19.40-68</ip>
+            <ip>129.2.19.71-72</ip>
+            <ip>129.2.19.74</ip>
+            <ip>129.2.19.79-82</ip>
+            <ip>129.2.19.86</ip> 
+            <ip>129.2.19.102</ip>
+            <ip>129.2.19.115-125</ip>
+            <ip>129.2.19.127-255</ip>
+            <ip>129.2.20-255.*</ip>
+            <ip>131.118.232-239.*</ip>
+            <ip>131.118.255.166</ip>
+            <ip>136.160.224-231.*</ip>
+            <ip>206.196.160-191.*</ip>
+						<!-- Paid 2013 -->
+						<!-- Paid 2014 -->
+        </user>
+
+        <user name="richland">
+            <name>Richland, Washington</name>
+            <contact/>
+            <ip>198.102.*.*</ip>
+        </user>
+
+        <user name="amsterdam">
+            <name>Amsterdam, New York</name>
+            <contact/>
+            <ip>64.128.172.*</ip>
+        </user>
+
+        <user name="stanford">
+            <name>Stanford University</name>
+            <contact>ahunger@harrassowitz.de</contact>
+            <ip>128.12.*.*</ip>
+            <ip>134.79.*.*</ip>
+            <ip>171.64.*.*</ip>
+            <ip>171.66.*.*</ip>
+            <ip>171.67.*.*</ip>
+            <ip>171.65.*.*</ip>
+            <ip>174.137.34.1-62</ip>
+            <ip>199.75.211.*</ip>
+            <ip>171.64.14.233</ip>
+        </user>
+
+        <user name="rhul" password="radicalrhul">
+            <name>University of London - Royal Holloway</name>
+            <contact/>
+            <ip>134.219.0-115.*</ip>
+            <ip>134.219.116-223.*</ip>
+            <ip>134.219.225-255.*</ip>
+            <ip>134.219.*.*</ip>
+        </user>
+        <!-- End: Previous paid subscribers -->
+
+        <!-- Unknown user IP from htaccess file -->
+        <user name="unknown">
+            <name>Unknown, from htaccess file</name>
+            <contact/>
+            <ip>192.168.2.196</ip>
+        </user>
+        <!-- End: Unknown user IP from htaccess file -->
+
+        <!-- Paid but user IP unknown and no response from email -->
+        <user name="adirondack">
+            <name>Adirondack Community College Library</name>
+            <contact>ronningt@acc.sunyacc.edu</contact>
+            <ip/>
+        </user>
+
+        <user name="HELIN">
+            <name>HELIN Consortium</name>
+            <contact>baspri@etal.uri.edu</contact>
+            <ip/>
+        </user>
+
+        <user name="morehead">
+            <name>Morehead University</name>
+            <contact>e.pritch@morehead-st.edu</contact>
+            <ip/>
+        </user>
+        <!-- End: Paid but user IP unknown and no response from email -->
+
+    </users>
+</authentication>

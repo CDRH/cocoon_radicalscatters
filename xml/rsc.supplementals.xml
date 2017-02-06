@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documents xmlns="http://www.w3.org/1999/xhtml">
+
+
+  <document id="about">
+    <html>
+      <head>
+        <title>About</title>
+      </head>
+      <body>
+        <h1>About</h1>
+        <div class="toc">
+          <div class="tocEntry">
+
+
+            <p>
+              <span class="section"><a href="acknowledgments.html">Acknowledgments</a>
+              </span>
+            </p>
+            <p>
+              <span class="section">
+                <a href="abbreviations">Abbreviations</a>
+              </span>
+            </p>
+            <p>
+              <span class="section">
+                <a href="bibliography.html">Bibliography</a>
+              </span>
+            </p>
+            <p>
+              <span class="section">
+                <a href="contact.html">Contact and Credits</a>
+              </span>
+            </p>
+
+          </div>
+          <div class="tocEntry"> </div>
+        </div>
+      </body>
+    </html>
+  </document>
+
+
+  <document id="introductions">
+    <html>
+      <head>
+        <title>Introductions</title>
+      </head>
+      <body>
+        <h1>Introductions</h1>
+        
+        
+        
+        <ul>
+          <li>Textual and Critical Introductions</li>
+          <ul>
+            <li><a href="ma002.html">"Most Arrows":
+              Autonomy and Intertextuality in Emily Dickinson's Late Fragments</a></li>
+            <li><a href="irs003.html">"A Woe of Ecstasy":
+              On the Electronic Editing of Emily Dickinson's Late Fragments</a></li>
+            <li><a href="hand001.html">Dickinson's Late Hand</a></li></ul>
+          <li>Site Introduction</li>
+          <ul><li><a href="lsp001.html">Navigating in the Archive: Orientation, Disorientation,
+            Reorientation</a></li></ul>
+        </ul>
+        
+        
+        
+       
+      </body>
+    </html>
+  </document>
+
+  <document id="indices">
+    <html>
+      <head>
+        <title>Indices</title>
+      </head>
+      <body>
+        <h1>Archive Indices</h1>
+        <ul>
+        <li>
+          <a href="ind0010.html">All Documents Carrying Fragments</a>
+        </li>
+        <ul><li>
+          <a href="ind002.html">Autonomous Fragments</a>
+        </li>
+        <li>
+          <a href="ind003.html">Trace Fragments</a>
+        </li>
+        <li>
+          <a href="ind004.html">Variant Fragments</a>
+        </li></ul>
+          
+          <li><a href="ind005.html">Documents Carrying Poems, Letters, and Miscellaneous Writings Related to the Fragments</a></li>
+            
+            <li><a href="ind006.html">Document Constellations</a></li>
+            
+            <li><a href="ind007.html">Other Texts Inscribed on Documents Carrying Fragments</a></li>
+            
+            <li><a href="ind008.html">Control Documents and/or Texts</a>  </li>
+       </ul>
+      </body>
+    </html>
+  </document>
+
+  <document id="browse">
+    <html>
+      <head>
+        <title>Browse Documents</title>
+      </head>
+      <body>
+        <h1>Browse Documents</h1>
+        <div class="toc">
+          <div class="tocEntry">
+            <p>
+              <strong class="docTitle">
+                <a href="lsp001.html">Library of Search Paths</a>
+              </strong>
+              <br/>
+              <span class="description">The "Library of Search Paths" offers an extensive list of
+                possible search paths. From the "Library of Search Paths" viewers may search across
+                the archive for documents falling within certain generic categories (fragment, poem,
+                letter, etc.);</span>
+            </p>
+          </div>
+          <div class="tocEntry">
+            <p>
+              <strong class="docTitle">
+                <a href="hand001.html">Hand Library</a>
+              </strong>
+              <br/>
+              <span class="description">The "Hand Library" offers examples of Dickinson's rough- and
+                fair-copy handwriting styles, and allows viewers to trace these "hands" across the
+                archive.</span>
+            </p>
+          </div>
+        </div>
+      </body>
+    </html>
+  </document>
+
+  <document id="appendices">
+    <html>
+      <head>
+        <title>Appendices</title>
+      </head>
+      <body>
+        <h1>Appendices</h1>
+        <div class="toc">
+          <div class="tocEntry">
+            <p>
+              <strong class="docTitle">
+                <a href="lsp001.html">Documents by Collection</a>
+              </strong>
+            </p>
+          </div>
+          <div class="tocEntry">
+            <p>
+              <strong class="docTitle">
+                <a href="hand001.html">Earliest Printed Sources of Fragments and Control Texts</a>
+              </strong>
+            </p>
+          </div>
+        </div>
+      </body>
+    </html>
+  </document>
+
+  <document id="abbreviations">
+    <html>
+      <head>
+        <title>Abbreviations</title>
+      </head>
+      <body>
+        <h1>Abbreviations</h1>
+        <div class="toc">
+          <div class="tocEntry">
+            <p>
+              <strong class="docTitle">
+                <a href="idman.html">Symbols Used to Identify Manuscripts</a>
+              </strong>
+            </p>
+          </div>
+          <div class="tocEntry">
+            <p>
+              <strong class="docTitle">
+                <a href="idpub.html">Symbols Used to Identify Editions and Related Texts</a>
+              </strong>
+            </p>
+          </div>
+          <div class="tocEntry">
+            <p>
+              <strong class="docTitle">
+                <a href="idprop.html">Abbreviations of Commonly Used Proper Names</a>
+              </strong>
+            </p>
+          </div>
+          <div class="tocEntry">
+            <p>
+              <strong class="docTitle">
+                <a href="ided.html">Editorial Symbols: Reading View</a>
+              </strong>
+            </p>
+          </div>
+
+
+
+        </div>
+      </body>
+    </html>
+  </document>
+
+
+</documents>

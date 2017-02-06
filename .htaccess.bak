@@ -1,0 +1,20 @@
+Order Deny,Allow
+AuthName "Password prompt"
+AuthUserFile /data/public/cdrh/rspasswords
+AuthType Basic
+Require valid-user
+Order Deny,Allow
+Deny from all
+Allow from 129.93
+Allow from 129.32 155.247
+Allow from 72.33 128.104 128.105 144.92 146.151 192.12.224 192.160.134 192.172.224 198.133
+Allow from 134.126
+Allow from 128.252
+Allow from 129.107
+Allow from 128.8 129.2 131.118 206.196
+Allow from 128.205 205.232
+Allow from 198.102 64.128.172
+Allow from 192.168.2.196
+Satisfy Any
+ErrorDocument 403 /projects/radicalscatters.php
+ErrorDocument 401 /projects/radicalscatters.php

@@ -1,0 +1,441 @@
+<?xml version="1.0"?>
+
+<map:sitemap xmlns:map="http://apache.org/cocoon/sitemap/1.0">
+  <map:components>
+    <map:generators default="file"/>
+    <map:transformers default="xslt"/>
+    <map:serializers default="xhtmlutf8">
+      <map:serializer logger="sitemap.serializer.xhtml" mime-type="text/html" name="xhtmlutf8" pool-grow="2" pool-max="64" pool-min="2" src="org.apache.cocoon.serialization.XMLSerializer">
+        <doctype-public>-//W3C//DTD XHTML 1.0 Transitional//EN</doctype-public>
+        <doctype-system>http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd</doctype-system>
+        <encoding>US-ASCII</encoding>
+        <omit-xml-declaration>yes</omit-xml-declaration>
+        <indent>no</indent>
+      </map:serializer>
+    </map:serializers>
+    <map:selectors default="browser"/>
+    
+    <map:matchers default="wildcard"/>
+    
+  </map:components>
+  
+  <map:pipelines>
+    
+    <map:component-configurations>
+      
+    </map:component-configurations>
+    
+    <map:pipeline>
+      
+      <!-- Main Page (/ or index.html) -->
+      
+     
+      
+      <!-- ========================================= -->
+      <!-- Rename 'index.html' to 'default.html'     -->
+      <!-- ========================================= -->
+      <map:match pattern="^(index.html)?$" type="regexp">
+        <map:read src="index.html"/>
+        <map:serialize />
+      </map:match>
+      
+      <map:match pattern="default.html" type="regexp">
+        <map:redirect-to uri="index.html"/>
+      </map:match>
+      
+      <map:match pattern="default-*.html">
+        <map:read src="index.html" />
+        <map:serialize />
+      </map:match>
+      
+      <!-- Introductions -->
+      <map:match pattern="introductions**">
+        <map:match pattern="introductions">
+          <map:redirect-to uri="introductions.html" />
+        </map:match>
+        <map:generate src="xml/rsc.supplementals.xml" />
+        <map:transform src="xsl/rsc.supplementals.xsl">
+          <map:parameter name="file" value="introductions" />
+          <map:parameter name="ref" value="introductions" />
+        </map:transform>
+        <map:transform src="xsl/rsc.HTMLwrapper.xsl">
+          <map:parameter name="use-request-parameters" value="true"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+      
+      <!-- Most Arrows Intro -->
+      <map:match pattern="ma002.html">
+        <map:redirect-to uri="mostarrows.html"/>
+      </map:match>
+      <map:match pattern="mostarrows.html">
+        
+          <map:parameter name="handler" value="ipAuthHandler"/>
+          <map:generate src="xml/rsc.whole.xml"/>
+          <map:transform src="xsl/rsc.editorial.xsl">
+            <map:parameter name="file" value="ma002"/>
+            <map:parameter name="ref" value="introductions"/>
+          </map:transform>
+          <map:transform src="xsl/rsc.HTMLwrapper.xsl">
+            <map:parameter name="use-request-parameters" value="true"/>
+          </map:transform>
+          <map:serialize type="xhtml"/>
+        
+      </map:match>
+      
+      <!-- Woe of Ecstasy Intro -->
+      <map:match pattern="irs003.html">
+        <map:redirect-to uri="woeofecstacy.html"/>
+      </map:match>
+      <map:match pattern="woeofecstacy.html">
+        
+          <map:parameter name="handler" value="ipAuthHandler"/>
+          <map:generate src="xml/rsc.whole.xml"/>
+          <map:transform src="xsl/rsc.editorial.xsl">
+            <map:parameter name="file" value="irs003"/>
+            <map:parameter name="ref" value="introductions"/>
+          </map:transform>
+          <map:transform src="xsl/rsc.HTMLwrapper.xsl">
+            <map:parameter name="use-request-parameters" value="true"/>
+          </map:transform>
+          <map:serialize type="xhtml"/>
+        
+      </map:match>
+      
+      
+      <!-- Dickinson's Late Hand Intro -->
+      <map:match pattern="hand001.html">
+        <map:redirect-to uri="latehand.html"/>
+      </map:match>
+      <map:match pattern="latehand.html">
+          <map:generate src="xml/rsc.whole.xml"/>
+          <map:transform src="xsl/rsc.editorial.xsl">
+            <map:parameter name="file" value="hand001"/>
+            <map:parameter name="ref" value="introductions"/>
+          </map:transform>
+          <map:transform src="xsl/rsc.HTMLwrapper.xsl">
+            <map:parameter name="use-request-parameters" value="true"/>
+          </map:transform>
+          <map:serialize type="xhtml"/>
+        
+      </map:match>
+      
+      
+      <!-- Site Intro - Navigating the Archive -->
+      <map:match pattern="lsp001.html">
+        <map:redirect-to uri="nagivating.html"/>
+      </map:match>
+      <map:match pattern="nagivating.html">
+        
+          <map:parameter name="handler" value="ipAuthHandler"/>
+          <map:generate src="xml/rsc.whole.xml"/>
+          <map:transform src="xsl/rsc.editorial.xsl">
+            <map:parameter name="file" value="lsp001"/>
+            <map:parameter name="ref" value="introductions"/>
+          </map:transform>
+          <map:transform src="xsl/rsc.HTMLwrapper.xsl">
+            <map:parameter name="use-request-parameters" value="true"/>
+          </map:transform>
+          <map:serialize type="xhtml"/>
+        
+      </map:match>
+      
+      
+      <!-- 
+       *  Archive Indices 
+       *  - indices/*.html
+      -->
+      
+      <!-- Main Page -->
+      <map:match pattern="indices">
+        <map:redirect-to uri="indices.html"/>
+      </map:match>
+      
+      <map:match pattern="indices.html">
+        
+          <map:parameter name="handler" value="ipAuthHandler"/>
+          <map:generate src="xml/rsc.supplementals.xml"/>
+          <map:transform src="xsl/rsc.supplementals.xsl">
+            <map:parameter name="file" value="indices"/>
+            <map:parameter name="ref" value="indices"/>
+          </map:transform>
+          <map:transform src="xsl/rsc.HTMLwrapper.xsl">
+            <map:parameter name="use-request-parameters" value="true"/>
+          </map:transform>
+          <map:serialize type="xhtml"/>
+        
+      </map:match>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <!-- Other indices -->
+      <!-- <map:match pattern="ind*.html">
+        <map:redirect-to uri="ind{1}.html"/>
+      </map:match>-->
+      <map:match pattern="ind**">
+        
+          <map:parameter name="handler" value="ipAuthHandler" />
+          <map:match pattern="ind*.html">
+            <map:generate src="xml/rsc.whole.xml"/>
+            <map:transform src="xsl/rsc.editorial.xsl">
+              <map:parameter name="file" value="ind{1}"/>
+              <map:parameter name="ref" value="indices"/>
+            </map:transform>
+            <map:transform src="xsl/rsc.HTMLwrapper.xsl">
+              <map:parameter name="use-request-parameters" value="true"/>
+            </map:transform>
+            <map:serialize type="xhtml"/>
+          </map:match>
+        
+      </map:match>
+      
+      
+      <!-- 
+       * Browse Documents 
+       * | browse/*.html
+       * | index/*/*
+       * | mss/*
+       * | mss/*/*
+      -->
+      <map:match pattern="browse">
+        <map:redirect-to uri="browse.html"/>
+      </map:match>
+      
+      <map:match pattern="browse.html">
+        
+          <map:parameter name="handler" value="ipAuthHandler"/>
+          <map:generate src="xml/rsc.whole.xml"/>
+          <map:transform src="xsl/rsc.editorial.xsl">
+            <map:parameter name="file" value="lsp002"/>
+            <map:parameter name="ref" value="browse"/>
+          </map:transform>
+          <map:transform src="xsl/rsc.HTMLwrapper.xsl">
+            <map:parameter name="use-request-parameters" value="true"/>
+          </map:transform>
+          <map:serialize type="xhtml"/>
+        
+      </map:match>
+      
+      <!-- Matchers for document views: -->
+      <map:match pattern="mss**">
+        
+          <map:parameter name="handler" value="ipAuthHandler" />
+          
+          <map:match pattern="mss/*.html">
+            <map:generate src="xml/rsc.whole.xml"/>
+            <map:transform src="xsl/rsc.tei.xsl">
+              <map:parameter name="requestDoc" value="{1}"/>
+            </map:transform>
+            <map:transform src="xsl/rsc.HTMLwrapper.xsl" />
+            <map:serialize type="xhtml"/>
+          </map:match>
+          
+          <!-- This outputs the XML for viewing in an HTML page -->
+          <map:match pattern="mss/txt/*.xml">
+            <map:generate src="xml/rsc.whole.xml"/>
+            <map:transform src="xsl/rsc.XMLtoHTML.xsl">
+              <map:parameter name="doc" value="{1}"/>
+            </map:transform>
+            <map:serialize type="xml"/>
+          </map:match>
+          
+        
+      </map:match>
+      
+      <map:match pattern="index/*">
+        
+          <map:parameter name="handler" value="ipAuthHandler"/>
+          <map:match pattern="index/*">
+            <map:generate src="xml/rsc.whole.xml"/>
+            <map:transform src="xsl/rsc.indexes.xsl">
+              <map:parameter name="id" value="{1}"/>
+            </map:transform>
+            <map:transform src="xsl/rsc.HTMLwrapper.xsl">
+              <map:parameter name="use-request-parameters" value="true"/>
+            </map:transform>
+            <map:serialize type="xhtml"/>
+          </map:match>
+        
+      </map:match>
+      
+      <map:match pattern="index/*/*">
+        
+          <map:parameter name="handler" value="ipAuthHandler"/>
+          <map:match pattern="index/*/*">
+            <map:generate src="xml/rsc.whole.xml"/>
+            <map:transform src="xsl/rsc.indexes.xsl">
+              <map:parameter name="id" value="{2}"/>
+            </map:transform>
+            <map:transform src="xsl/rsc.HTMLwrapper.xsl">
+              <map:parameter name="use-request-parameters" value="true"/>
+            </map:transform>
+            <map:serialize type="xhtml"/>
+          </map:match>
+        
+      </map:match>
+      
+      <!--
+      About
+      -->
+      <map:match pattern="about">
+        <map:redirect-to uri="about.html"/>
+      </map:match>
+      
+      <map:match pattern="about.html">
+        
+          <map:parameter name="handler" value="ipAuthHandler"/>
+          <map:generate src="xml/rsc.supplementals.xml"/>
+          <map:transform src="xsl/rsc.supplementals.xsl">
+            <map:parameter name="file" value="about"/>
+            <map:parameter name="ref" value="about"/>
+          </map:transform>
+          <map:transform src="xsl/rsc.HTMLwrapper.xsl">
+            <map:parameter name="use-request-parameters" value="true"/>
+          </map:transform>
+          <map:serialize type="xhtml"/>
+        
+      </map:match>
+      
+      
+      <map:match pattern="abbreviations">
+        <map:redirect-to uri="abbreviations.html"/>
+      </map:match>
+      
+      <map:match pattern="abbreviations.html">
+        
+          <map:parameter name="handler" value="ipAuthHandler"/>
+          <map:generate src="xml/rsc.supplementals.xml"/>
+          <map:transform src="xsl/rsc.supplementals.xsl">
+            <map:parameter name="file" value="abbreviations"/>
+            <map:parameter name="ref" value="abbreviations"/>
+          </map:transform>
+          <map:transform src="xsl/rsc.HTMLwrapper.xsl">
+            <map:parameter name="use-request-parameters" value="true"/>
+          </map:transform>
+          <map:serialize type="xhtml"/>
+        
+      </map:match>
+      
+      <!-- Abbreviations sub pages -->
+      <map:match pattern="id*.html">
+        <map:redirect-to uri="about/id{1}.html"/>
+      </map:match>
+      
+      <map:match pattern="about/id*.html">
+        
+          <map:parameter name="handler" value="ipAuthHandler"/>
+          
+          <map:match pattern="about/id*.html">
+            <map:generate src="xml/rsc.whole.xml"/>
+            <map:transform src="xsl/rsc.editorial.xsl">
+              <map:parameter name="file" value="id{1}"/>
+              <map:parameter name="ref" value="abbreviations"/>
+            </map:transform>
+            <map:transform src="xsl/rsc.HTMLwrapper.xsl">
+              <map:parameter name="use-request-parameters" value="true"/>
+            </map:transform>
+            <map:serialize type="xhtml"/>
+          </map:match>
+        
+      </map:match>
+      
+      
+      
+      <!-- 
+	   This handles:
+	   bibliography.html
+	   acknowledgments.html
+	   contact.html
+	   -->
+      
+      <map:match pattern="bibliography.html">
+        
+          <map:parameter name="handler" value="ipAuthHandler"/>
+          <map:generate src="xml/rsc.whole.xml"/>
+          <map:transform src="xsl/rsc.editorial.xsl">
+            <map:parameter name="file" value="bibliography"/>
+          </map:transform>
+          <map:transform src="xsl/rsc.HTMLwrapper.xsl">
+            <map:parameter name="use-request-parameters" value="true"/>
+          </map:transform>
+          <map:serialize type="xhtml"/>
+        
+      </map:match>
+      
+      <map:match pattern="acknowledgments.html">
+        
+          <map:parameter name="handler" value="ipAuthHandler"/>
+          <map:generate src="xml/rsc.whole.xml"/>
+          <map:transform src="xsl/rsc.editorial.xsl">
+            <map:parameter name="file" value="acknowledgments"/>
+          </map:transform>
+          <map:transform src="xsl/rsc.HTMLwrapper.xsl">
+            <map:parameter name="use-request-parameters" value="true"/>
+          </map:transform>
+          <map:serialize type="xhtml"/>
+        
+      </map:match>
+      
+      
+      <!--<map:match pattern="contact.html">
+        <map:redirect-to uri="contact.html"/>
+      </map:match>-->
+      
+      <map:match pattern="contact.html">
+        
+          <map:parameter name="handler" value="ipAuthHandler"/>
+          <map:generate src="xml/rsc.whole.xml"/>
+          <map:transform src="xsl/rsc.editorial.xsl">
+            <map:parameter name="file" value="contact"/>
+          </map:transform>
+          <map:transform src="xsl/rsc.HTMLwrapper.xsl">
+            <map:parameter name="use-request-parameters" value="true"/>
+          </map:transform>
+          <map:serialize type="xhtml"/>
+        
+      </map:match>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <!-- 
+ 	    General Stuff  
+ 	    -->
+      
+      <map:match pattern="scripts/*.js">
+        <map:read src="scripts/{1}.js" mime-type="text/javascript"/>
+      </map:match>
+      
+      <map:match pattern="images/**/*.jpg">
+        <map:read src="images/{1}/{2}.jpg" mime-type="image/jpeg"/>
+      </map:match>
+      
+      <map:match pattern="images/**/*.gif">
+        <map:read src="images/{1}/{2}.gif" mime-type="image/gif"/>
+      </map:match>
+      
+      <map:match pattern="css/*.css">
+        <map:read src="css/{1}.css" mime-type="text/css"/>
+      </map:match>
+      
+      
+    </map:pipeline>
+  </map:pipelines>
+</map:sitemap>
