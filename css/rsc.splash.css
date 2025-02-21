@@ -31,7 +31,7 @@ a:hover {
 /*	
  *	  Prefooter
  */
-div#prefooter {
+#prefooter {
 	clear: both;
 	padding: 60px 20px 20px 20px;
 	margin-top: 155px;
@@ -42,15 +42,9 @@ div#prefooter {
 	text-align: left;
 }
 
-div#prefooter li{
- }
-
-div#prefooter li a{
- }
-
 /* Footer */
 
-div#footer {
+#footer {
 	clear: both;
 	padding: 20px 0 0 0 ;
 	margin-top: 20px;
@@ -61,23 +55,23 @@ div#footer {
 	text-align: right;
 }
 
-div#prefooter h1 {
+#prefooter h1 {
 	color: #EDEEDC;
 
 }
 
-div#footer ul{
+#footer ul{
 	margin-left: 20px;
 	margin-right: 0px;
 }
 
-div#footer ul li{
+#footer ul li{
 	display: inline;
 	margin-left: 20px;
 }
 
 
-div#prefooter ul li{
+#prefooter ul li{
 	color: #D4CCC1;
 	padding: 0px;
 	margin-top: -10px;
@@ -117,7 +111,7 @@ dt {
 
 
 
-
+/* 
 
 #splashinit {
 	height: 45px;
@@ -130,17 +124,17 @@ dt {
 .splashcredits {
 	margin-left: 550px;
 
-}
+} */
 
 
 
-h1 img {
+/* h1 img {
 	padding-top:40px;
 }
 
 div.splashcredits h1 {
 	padding-top: 40px;
-}
+} */
 
 p.subscription-info {
 	width: 350px;
