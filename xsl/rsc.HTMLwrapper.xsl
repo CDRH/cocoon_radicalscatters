@@ -80,9 +80,9 @@
               </ul>
             </nav>
 
-            <ul class="breadCrubs">
+            <nav class="breadCrubs">
               <xsl:copy-of select="//xhtml:ul[@class='breadCrumbs']"/>
-            </ul>
+            </nav>
 
           </div>
 
