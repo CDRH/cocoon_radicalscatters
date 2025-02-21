@@ -215,11 +215,14 @@ p {
     margin: 10px 0px 20px 0px;
     line-height: 1.7em;
 }
+
+.extraMenu ul,
 main ul,
 footer ul {
     margin: 10px 30px 15px 30px;
 }
 
+.extraMenu ul,
 main li, 
 footer li {
     padding-bottom: 10px;
