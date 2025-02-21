@@ -14,7 +14,7 @@
     <xsl:include href="rsc.linking.xsl"/>
 
     <xsl:template match="/">
-        <html xmlns="http://www.w3.org/1999/xhtml">
+        <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
             <head>
                 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
                 <title>Radical Scatters</title>
