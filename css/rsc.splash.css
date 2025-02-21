@@ -122,7 +122,7 @@ dt {
 #splashinit {
 	height: 45px;
 }
-#splash {}
+#splash {padding-top: 45px;}
 #splash img {
 	margin: 0px;
 	float: left;
