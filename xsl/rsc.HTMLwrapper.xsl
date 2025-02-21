@@ -41,10 +41,9 @@
       </head>
 
       <body>
-        <div id="bodyContent2">
-          <div id="bodyContent">
-          <div id="header">
-            <div class="extraMenu">
+           <header>          <div class="bodyContent">
+          <div class="header-content">
+            <nav class="extraMenu" aria-label="Supplmentary Info">
               <ul>
                 <li>
                   <a href="acknowledgments.html">Acknowledgments</a>
@@ -57,11 +56,11 @@
                 </li>
  
               </ul>
-            </div>
+            </nav>
 
-            <h1>Radical Scatters</h1>
+            <span class="site-title">Radical Scatters</span>
 
-            <div class="mainMenu">
+            <nav class="mainMenu" aria-label="Main Menu">
               <ul>
                 <li>
                   <a href="index.html">Home</a>
@@ -79,7 +78,7 @@
                   <a href="search/main">Search</a>
                 </li>-->
               </ul>
-            </div>
+            </nav>
 
             <div class="breadCrubs">
               <xsl:copy-of select="//xhtml:p[@class='breadCrumbs']"/>
@@ -87,37 +86,45 @@
 
           </div>
 
+        </div>
+        </header>
+        <main>
+<div class="bodyContent" id="main_content">
           <div id="mainContent">
 
             <xsl:copy-of select=".//xhtml:body/*[not(@class='breadCrumbs')]"/>
 
-            <div id="footer">
 
-              <ul>
-                <li>
-                  <a href="contact.html">Contact</a>
-                </li>
+          </div></div>
+</main>
+<footer>
 
-
-                <li>
-                  <a href="about">About</a>
-                </li>
-              </ul>
-
-              <p class="copyStmt"> &#169; The University of
-                Nebraska&#8211;Lincoln, June 2007 - 2010<br/>  &#169; The University of
-                Michigan, 1999 - May 2007</p>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-
-            </div>
-          </div>
-
+        <div class="bodyContent">
+                    <div class="footer-wrapper">
+        
+                      <ul>
+                        <li>
+                          <a href="contact.html">Contact</a>
+                        </li>
+        
+        
+                        <li>
+                          <a href="about">About</a>
+                        </li>
+                      </ul>
+        
+                      <p class="copyStmt"> &#169; The University of
+                        Nebraska&#8211;Lincoln, June 2007 - 2010<br/>  &#169; The University of
+                        Michigan, 1999 - May 2007</p>
+                      <br/>
+                      <br/>
+                      <br/>
+                      <br/>
+                      <br/>
+        
+                    </div>
         </div>
-</div>
+</footer>
       </body>
     </html>
 
