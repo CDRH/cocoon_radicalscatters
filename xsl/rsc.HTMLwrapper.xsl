@@ -81,7 +81,7 @@
             </nav>
 
             <div class="breadCrubs">
-              <xsl:copy-of select="//xhtml:p[@class='breadCrumbs']"/>
+              <xsl:copy-of select="//xhtml:ul[@class='breadCrumbs']"/>
             </div>
 
           </div>

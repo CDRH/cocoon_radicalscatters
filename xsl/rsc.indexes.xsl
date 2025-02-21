@@ -60,13 +60,13 @@
                 </h1>
 
                 <!-- Call template in rsc.globals.xsl -->
-                <p class="breadCrumbs">
+                <ul class="breadCrumbs">
                     <xsl:call-template name="generateBreadcrumbs">
                         <xsl:with-param name="docType" select="'index'"/>
                         <xsl:with-param name="refFrom" select="$ref"/>
                         <xsl:with-param name="currId" select="$id"/>
                     </xsl:call-template>
-                </p>
+                </ul>
 
                 <!-- List of all categories in taxonomy -->
                 <ul class="categories">

@@ -25,13 +25,13 @@
       <body>
 
         <!-- Call template in rsc.globals.xsl -->
-        <p class="breadCrumbs">
+        <ul class="breadCrumbs">
           <xsl:call-template name="generateBreadcrumbs">
             <xsl:with-param name="docType" select="'editorial'"/>
             <xsl:with-param name="refFrom" select="$ref"/>
             <xsl:with-param name="currId" select="$file"/>
           </xsl:call-template>
-        </p>
+        </ul>
 
         <xsl:apply-templates select="//div1[@xml:id=$file]"/>
 

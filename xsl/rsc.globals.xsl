@@ -91,162 +91,187 @@
     <xsl:param name="qstring"/>
 
     <xsl:variable name="sep"> > </xsl:variable>
-    <a href="index.html">Home</a>
+    <li><a href="index.html">Home</a></li>
     <xsl:choose>
 
       <!-- TEI documents -->
       <xsl:when test=" $docType = 'tei' ">
-        <xsl:copy-of select="$sep"/>
+        <!-- <xsl:copy-of select="$sep"/> -->
         <xsl:choose>
           <!-- Linked from library of search paths -->
           <xsl:when test="//category[@xml:id=$refFrom]">
-            <a href="browse">Browse</a>
-            <xsl:copy-of select="$sep"/>
+            <li><a href="browse">Browse</a></li>
+            <!-- <xsl:copy-of select="$sep"/> -->
 
-            <a
+            <li><a
               href="index/{encode-for-uri(lower-case(//taxonomy[.//category/@xml:id=$refFrom]/@n))}">
               <xsl:call-template name="uc_first">
                 <xsl:with-param name="string" select="//taxonomy[.//category/@xml:id=$refFrom]/@n"/>
               </xsl:call-template>
-            </a>
-            <xsl:copy-of select="$sep"/>
-            <a
+            </a></li>
+            <!-- <xsl:copy-of select="$sep"/> -->
+            <Li><a
               href="index/{encode-for-uri(lower-case(//taxonomy[.//category/@xml:id=$refFrom]/@n))}/{encode-for-uri(lower-case(//taxonomy//category[@xml:id=$refFrom]/@xml:id))}">
               <xsl:call-template name="uc_first">
                 <xsl:with-param name="string"
                   select="//taxonomy//category[@xml:id=$refFrom]/catDesc/@n"/>
                 <xsl:with-param name="doNotLower" select="'true'"/>
               </xsl:call-template>
-            </a>
+            </a></Li>
           </xsl:when>
           <!-- Linked from a main index -->
           <xsl:when test="starts-with($refFrom, 'i')">
-            <a href="indices">Indices</a>
-            <xsl:copy-of select="$sep"/>
-            <a href="{$refFrom}.html">
+            <li><a href="indices">Indices</a></li>
+            <!-- <xsl:copy-of select="$sep"/> -->
+            <li><a href="{$refFrom}.html">
 
               <xsl:value-of select="//div1[@xml:id=$refFrom]/head[1]"/>
-            </a>
+            </a></li>
           </xsl:when>
           <!-- Linked from a search page -->
           <xsl:when test=" $refFrom = 'search' ">
-            <a href="search/main">Search</a>
-            <xsl:copy-of select="$sep"/>
-            <a href="search/exact?qstring={encode-for-uri($qstring)}">Search Results</a>
+            <li><a href="search/main">Search</a></li>
+            <!-- <xsl:copy-of select="$sep"/> -->
+            <li><a href="search/exact?qstring={encode-for-uri($qstring)}">Search Results</a></li>
           </xsl:when>
         </xsl:choose>
         <!-- Finally, print the name of the current TEI document -->
-        <xsl:copy-of select="$sep"/>
-        <xsl:call-template name="getName">
+        <!-- <xsl:copy-of select="$sep"/> -->
+        <li>        <xsl:call-template name="getName">
           <xsl:with-param name="id" select="$currId"/>
-        </xsl:call-template>
+        </xsl:call-template></li>
       </xsl:when>
 
       <!-- Supplementary, editorial -->
       <xsl:when test=" $docType = 'supplemental' or $docType = 'editorial' ">
         <xsl:choose>
           <xsl:when test="$refFrom = 'introductions'">
-            <xsl:copy-of select="$sep"/>
+            <!-- <xsl:copy-of select="$sep"/> -->
             <xsl:choose>
-              <xsl:when test="$currId=$refFrom"> Introductions </xsl:when>
+              <xsl:when test="$currId=$refFrom"> <li>Introductions</li> </xsl:when>
               <xsl:otherwise>
-                <a href="introductions">Introductions</a>
-                <xsl:copy-of select="$sep"/>
+                <li><a href="introductions">Introductions</a></li>
+                <!-- <xsl:copy-of select="$sep"/> -->
 
-                <xsl:value-of select="//div1[@xml:id=$currId]/head[1]"/>
+                <li><xsl:value-of select="//div1[@xml:id=$currId]/head[1]"/></li>
               </xsl:otherwise>
             </xsl:choose>
           </xsl:when>
           <xsl:when test="$refFrom = 'indices'">
-            <xsl:copy-of select="$sep"/>
+            <!-- <xsl:copy-of select="$sep"/> -->
             <xsl:choose>
-              <xsl:when test=" $refFrom = $currId "> Indices </xsl:when>
+              <xsl:when test=" $refFrom = $currId "> <li>Indices</li> </xsl:when>
               <xsl:otherwise>
-                <a href="indices">Indices</a>
-                <xsl:copy-of select="$sep"/>
+                <li><a href="indices">Indices</a></li>
+                <!-- <xsl:copy-of select="$sep"/> -->
 
-                <xsl:value-of select="//div1[@xml:id=$currId]/head[1]"/>
+                <li><xsl:value-of select="//div1[@xml:id=$currId]/head[1]"/></li>
               </xsl:otherwise>
             </xsl:choose>
           </xsl:when>
           <xsl:when test="$refFrom = 'browse'">
-            <xsl:copy-of select="$sep"/>
+            <!-- <xsl:copy-of select="$sep"/> -->
             <xsl:choose>
-              <xsl:when test=" $refFrom = $currId "> Browse </xsl:when>
+              <xsl:when test=" $refFrom = $currId "> <li>Browse</li> </xsl:when>
               <xsl:otherwise>
-                <a href="browse">Browse</a>
-                <xsl:copy-of select="$sep"/>
-                <xsl:value-of select="//div1[@xml:id=$currId]/head[1]"/>
+                <li><a href="browse">Browse</a></li>
+                <!-- <xsl:copy-of select="$sep"/> -->
+                <li><xsl:value-of select="//div1[@xml:id=$currId]/head[1]"/></li>
               </xsl:otherwise>
             </xsl:choose>
           </xsl:when>
 
           <!-- Abbreviations -->
           <xsl:when test="$refFrom = 'abbreviations'">
-            <xsl:copy-of select="$sep"/>
+            <!-- <xsl:copy-of select="$sep"/> -->
             <xsl:choose>
-              <xsl:when test=" $refFrom = $currId "> Abbreviations </xsl:when>
+              <xsl:when test=" $refFrom = $currId "> <li>Abbreviations</li> </xsl:when>
               <xsl:otherwise>
-                <a href="abbreviations">Abbreviations</a>
-                <xsl:copy-of select="$sep"/>
-                <xsl:value-of select="//div1[@xml:id=$currId]/head[1]"/>
+                <li><a href="abbreviations">Abbreviations</a></li>
+                <!-- <xsl:copy-of select="$sep"/> -->
+                <li><xsl:value-of select="//div1[@xml:id=$currId]/head[1]"/></li>
               </xsl:otherwise>
             </xsl:choose>
           </xsl:when>
 
           <!-- User Guide -->
           <xsl:when test=" $currId = 'usg001' ">
-            <xsl:copy-of select="$sep"/> User's Guide </xsl:when>
+            <!-- <xsl:copy-of select="$sep"/> --> <li>User's Guide</li> </xsl:when>
           <!-- Appendices -->
           <xsl:when test=" $currId = 'appendices' ">
-            <xsl:copy-of select="$sep"/> Appendices </xsl:when>
+            <!-- <xsl:copy-of select="$sep"/> --> <li>Appendices</li> </xsl:when>
           <!-- Bibl -->
           <xsl:when test=" $currId = 'bibliography' ">
-            <xsl:copy-of select="$sep"/> Bibliography </xsl:when>
+            <!-- <xsl:copy-of select="$sep"/> --> <li>Bibliography</li> </xsl:when>
           <!-- Bibl -->
           <xsl:when test=" $currId = 'acknowledgments' ">
-            <xsl:copy-of select="$sep"/> Acknowledgments </xsl:when>
-          <xsl:otherwise> doctype: <xsl:value-of select="$docType"/>, ref: <xsl:value-of
-              select="$refFrom"/>, id: <xsl:value-of select="$currId"/>
+            <!-- <xsl:copy-of select="$sep"/> --> <li>Acknowledgments</li> </xsl:when>
+          <xsl:otherwise> <li>doctype: <xsl:value-of select="$docType"/>, ref: <xsl:value-of
+              select="$refFrom"/>, id: <xsl:value-of select="$currId"/></li>
           </xsl:otherwise>
         </xsl:choose>
       </xsl:when>
 
       <!-- Indices (not indices index ) -->
       <xsl:when test=" $docType = 'index'">
-        <xsl:copy-of select="$sep"/>
-        <a href="browse">Browse</a>
-        <xsl:copy-of select="$sep"/>
+        <!-- <xsl:copy-of select="$sep"/> -->
+        <li><a href="browse">Browse</a></li>
+        <!-- <xsl:copy-of select="$sep"/> -->
         <xsl:choose>
           <xsl:when test="//taxonomy/@n = $currId">
-            <xsl:call-template name="uc_first">
+            <li><xsl:call-template name="uc_first">
               <xsl:with-param name="string" select="//taxonomy[@n=$currId]/@n"/>
-            </xsl:call-template>
+            </xsl:call-template></li>
           </xsl:when>
           <xsl:otherwise>
-            <a href="index/{encode-for-uri(lower-case(//taxonomy[.//category/@xml:id=$currId]/@n))}">
+            <li><a href="index/{encode-for-uri(lower-case(//taxonomy[.//category/@xml:id=$currId]/@n))}">
               <xsl:call-template name="uc_first">
                 <xsl:with-param name="string" select="//taxonomy[.//category/@xml:id=$currId]/@n"/>
               </xsl:call-template>
-            </a>
-            <xsl:copy-of select="$sep"/>
-            <xsl:call-template name="uc_first">
+            </a></li>
+            <!-- <xsl:copy-of select="$sep"/> -->
+            <li><xsl:call-template name="uc_first">
               <xsl:with-param name="string"
                 select="//taxonomy//category[@xml:id=$currId]/catDesc/@n"/>
               <xsl:with-param name="doNotLower" select="'true'"/>
-            </xsl:call-template>
+            </xsl:call-template></li>
           </xsl:otherwise>
         </xsl:choose>
       </xsl:when>
 
       <!-- Search pages -->
       <xsl:when test=" $docType = 'search'">
-        <xsl:copy-of select="$sep"/> Search </xsl:when>
+        <!-- <xsl:copy-of select="$sep"/> -->  </xsl:when>
 
       <xsl:otherwise> </xsl:otherwise>
     </xsl:choose>
 
   </xsl:template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <!-- Given an id, return the relative url -->
   <xsl:template name="findLink">

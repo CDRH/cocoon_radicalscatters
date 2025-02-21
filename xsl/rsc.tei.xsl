@@ -47,14 +47,14 @@
             <body>
 
                 <!-- Call template in rsc.globals.xsl -->
-                <p class="breadCrumbs">
+                <ul class="breadCrumbs">
                     <xsl:call-template name="generateBreadcrumbs">
                         <xsl:with-param name="docType" select="'tei'"/>
                         <xsl:with-param name="refFrom" select="$ref"/>
                         <xsl:with-param name="currId" select="$doc"/>
                         <xsl:with-param name="qstring" select="$qstring"/>
                     </xsl:call-template>
-                </p>
+                </ul>
 
                 <xsl:apply-templates select="//TEI[@xml:id=$doc]"/>
             </body>

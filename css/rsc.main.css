@@ -90,7 +90,7 @@ header .bodyContent {
 }
 .mainMenu a {
     text-decoration: none;
-    color: #cdb764;
+    color: #e4cd75;
     display: block;
     height: 1.8em;
     padding: .5em 20px 0px 20px;
@@ -98,8 +98,9 @@ header .bodyContent {
 }
 .mainMenu a:visited {
     text-decoration: none;
-    color: #cdb764;
+    color: #e4cd75;
 }
+
 .mainMenu a:hover {
     text-decoration: underline;
     background: #000000;
@@ -122,11 +123,32 @@ header .bodyContent {
     background: #D3CCBC;
     padding: 4px 10px 4px 10px;
 }
-.breadCrubs p {
+.breadCrubs p,
+.breadCrubs ul {
     margin: 0px;
     padding: 0px;
     text-align: left;
     font-size: .8em;
+}
+
+.breadCrubs ul {
+  padding: 4px 0 5px 0;
+}
+
+.breadCrubs ul > :not(li) {
+  border: 3px solid purple;
+}
+
+.breadCrubs ul li {
+  display: inline-block;
+  position: relative;
+}
+
+/* Separator */
+.breadCrubs ul li:not(:last-of-type)::after {
+  content: '>';
+  margin: 0px 4px;
+  position: relative;
 }
 /*
   *	  Footer
@@ -149,6 +171,15 @@ header .bodyContent {
 .footer-wrapper ul li {
     display: inline;
     margin-left: 20px;
+}
+
+.footer-wrapper a:link,
+.footer-wrapper a:visited {
+  color: #e4cd75;
+}
+
+.footer-wrapper a:hover {
+  color: #EEEEDD;
 }
 /*
   *	  Main content layout
@@ -184,10 +215,13 @@ p {
     margin: 10px 0px 20px 0px;
     line-height: 1.7em;
 }
-ul {
+main ul,
+footer ul {
     margin: 10px 30px 15px 30px;
 }
-li {
+
+main li, 
+footer li {
     padding-bottom: 10px;
     padding-top: 5px;
     font-size: .9em;
