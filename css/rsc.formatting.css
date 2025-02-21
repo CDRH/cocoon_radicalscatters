@@ -10,5 +10,5 @@ em.doubleUnderline {border-bottom: double 3px;}
 em.title {font-style: italic;}
 
 strong.label { font-weight: bold; display: block; padding-bottom: 5px; text-indent: -15px;}
-span.editorial {color: #a42f1c; font-family: "Courier New", Courier, monospace; }
+span.editorial {color: #930606; font-family: "Courier New", Courier, monospace; }
 span.striked {text-decoration: line-through; }
