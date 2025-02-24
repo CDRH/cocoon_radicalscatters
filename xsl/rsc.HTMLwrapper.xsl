@@ -52,7 +52,7 @@
           </div>
         </div>
           <div class="header-content">
-            <nav class="extraMenu" aria-label="Supplmentary Info">
+            <nav class="extraMenu" aria-label="Supplementary Info">
               <ul>
                 <li>
                   <a href="acknowledgments.html">Acknowledgments</a>
