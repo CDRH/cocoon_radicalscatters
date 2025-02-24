@@ -45,7 +45,7 @@
       <a class="sr-only sr-only-focusable" href="#main_content">Skip to main content</a>          
       <div class="bodyContent">
           <div class="header-content">
-            <nav class="extraMenu" aria-label="Supplmentary Info">
+            <nav class="extraMenu" aria-label="Supplementary Info">
               <ul>
                 <li>
                   <a href="acknowledgments.html">Acknowledgments</a>
