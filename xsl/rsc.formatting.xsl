@@ -169,7 +169,12 @@
 
 	<xsl:template match="figure">
 		<div class="imageBox">
-			<img src="images/figures/500px/{./graphic/@url}"/>
+			<img src="images/figures/500px/{./graphic/@url}">
+                <xsl:attribute name="alt">
+                    <xsl:apply-templates select="./figDesc"/>
+                </xsl:attribute>
+            </img>
+
 			<p class="caption">
 				<xsl:apply-templates select="./figDesc"/>
 			</p>
