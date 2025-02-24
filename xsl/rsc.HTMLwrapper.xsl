@@ -41,7 +41,9 @@
       </head>
 
       <body>
-           <header>          <div class="bodyContent">
+           <header>
+      <a class="sr-only sr-only-focusable" href="#main_content">Skip to main content</a>          
+      <div class="bodyContent">
           <div class="header-content">
             <nav class="extraMenu" aria-label="Supplmentary Info">
               <ul>
