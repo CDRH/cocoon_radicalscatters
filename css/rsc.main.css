@@ -34,6 +34,11 @@ footer {
     margin-left: auto;
     background-image: url(../images/template/bg.jpg);
 }
+
+footer .bodyContent {
+  background-color: #eeeedd;
+}
+
 #bodyContent,
 .bodyContent {
     background:#000;
@@ -216,7 +221,7 @@ p {
 }
 
 .extraMenu ul,
-main ul,
+main ul, 
 footer ul {
     margin: 10px 30px 15px 30px;
 }
@@ -328,13 +333,20 @@ ul.categories {
     padding: 0px;
 }
 ul.categories li.selected {
-    background: #AFAF5F;
+    /* background: #AFAF5F; */
+    background-color: #CACAB4;
 }
+
+ul.categories li.selected a {
+  color: #804040;
+}
+
 .recordSet {
     margin-left: 290px
 }
-ul.documentRecords {
-    margin-left: 0px;
+main ul.documentRecords {
+    display: inline-block;
+    margin: 0px;
 }
 ul.documentRecords li {
     border: dashed 1px #666666;
@@ -419,9 +431,7 @@ dt {
     color:#AFA899;
     padding:5px;
 }
-ul.documentRecords {
-    margin-left: 0px;
-}
+
 ul.documentRecords li {
     border: dashed 1px #666666;
     text-align: center;
