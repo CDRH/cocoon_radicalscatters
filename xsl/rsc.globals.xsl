@@ -57,7 +57,8 @@
   <!-- Print an <img> for the thumnail of the given figure id -->
   <xsl:template name="getThumnNail">
     <xsl:param name="id"/>
-    <img src="images/figures/95px/{$id}"/>
+    <img src="images/figures/95px/{$id}" alt="{@xml:id}"/>
+
   </xsl:template>
 
   <!-- Print a string with the first character capitalized and the others lower case -->
@@ -399,7 +400,11 @@
                 <a>
                   <xsl:attribute name="href">mss/<xsl:value-of select="@target"
                   />.facs.html?ref=<xsl:value-of select="ancestor::div1/@xml:id"/></xsl:attribute>
-                  <img src="images/figures/95px/{@n}.jpg"/>
+                  <img src="images/figures/95px/{@n}.jpg">
+                  <xsl:attribute name="alt">
+                    <xsl:value-of select="."/>
+                  </xsl:attribute>
+                </img>
                 </a>
               </span>
               <a>

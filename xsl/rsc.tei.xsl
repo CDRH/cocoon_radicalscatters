@@ -127,11 +127,15 @@
                         <xsl:variable name="textRepresentation"><xsl:value-of select="$BASE_HREF"
                         />mss/txt/<xsl:value-of select="$doc"/>.xml</xsl:variable>
                         <a>
-                            <xsl:attribute name="href"><xsl:value-of select="$textRepresentation"/></xsl:attribute></a>
-                        
-                        <a
+                            <xsl:attribute name="href"><xsl:value-of select="$textRepresentation"/></xsl:attribute>
+                            <xsl:attribute name="target">
+                                <xsl:text>_blank</xsl:text>
+                            </xsl:attribute>
+                        View in New Window
+                        </a>
+<!--                         <a
                             href="{$textRepresentation}"
-                            onclick="window.open(this.href);return false;">View in New Window</a><br/>Right click and choose "save link as..." or "save target as..." to download XML
+                            onclick="window.open(this.href);return false;">View in New Window</a> --><br/>Right click and choose "save link as..." or "save target as..." to download XML
                         <!--<xsl:copy-of select="document($textRepresentation)/txt/*"/>-->
                     </xsl:when>
                     <xsl:otherwise>
@@ -254,17 +258,15 @@
     </xsl:template>
 
 
-
     <xsl:template name="imageViewer">
         <xsl:param name="images"/>
         <div class="imageView">
             <xsl:for-each select="$images/figure">
                 <p>
                     <img
-                        src="images/figures/500px/{graphic/@url}"
-                        alt="{@id}"/>
-                    <br/>
-                    <a
+                        src="images/figures/500px/{graphic/@url}" alt="{graphic/@url}"/>
+                  <br/>
+                  <a
                         href="images/figures/500px/{graphic/@url}"
                         onclick="window.open(this.href,'{graphic/@url}500','height=520,width=520,toolbar=no,directories=no,status=no,menubar=no,scrollbars=no');return false;">View in New Window</a>
                     <xsl:if test="not(ends-with(graphic/@url, 't.jpg'))"><br/><a
