@@ -4,14 +4,38 @@
 
 body {
 	font-family: verdana, "Trebuchet MS", trebuchet, Arial, Helvetica, sans-serf;
-	width: 1000px;
+	background-color: #3C382F;
+}
+
+main, footer, .landmark-wrapper {
+  width: 1000px;
 	margin-right: auto;
 	margin-left: auto;
-	background-color: #3C382F;
+}
+
+.header-background-image {
 	background-image: url(../images/template/main_bg.jpg);
 	background-repeat: repeat-x;
 	background-position: top;
+  height:500px;
 }
+
+.green-banner p a,
+.green-banner p a:visited {
+  color: #0000EE;
+  background: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.green-banner p a:hover {
+  background: none;
+  color: #010194;
+  margin: 0;
+  padding: 0;
+}
+
 a {padding:5px;}
 a:link {
 	text-decoration: none;
@@ -32,7 +56,7 @@ a:hover {
 #prefooter {
 	clear: both;
 	padding: 60px 20px 20px 20px;
-	margin-top: 125px;
+	margin-top: -80px;
 	margin-right: -20px;
 	margin-bottom: -20px;
 	margin-left: -20px;

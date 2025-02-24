@@ -46,6 +46,23 @@ footer .bodyContent {
     margin-right: auto;
     margin-left: auto;
 }
+
+.green-banner p a,
+.green-banner p a:visited {
+  color: #0000EE;
+  background: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.green-banner p a:hover {
+  background: none;
+  color: #010194;
+  margin: 0;
+  padding: 0;
+}
+
 a:link {
     text-decoration: underline;
     color: #804040;

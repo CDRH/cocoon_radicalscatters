@@ -42,8 +42,15 @@
 
       <body>
            <header>
-      <a class="sr-only sr-only-focusable" href="#main_content">Skip to main content</a>          
+      <a class="sr-only sr-only-focusable" href="#main_content">Skip to main content</a>
       <div class="bodyContent">
+      <div class="green-banner-wrapper" style="padding: 10px 10px 0px 10px;">
+          <div class="green-banner"
+            style="padding: 10px 20px; background-color: #bbdfbb; border: 2px solid #466f46; border-radius:3px;">
+            <p style="margin: 0; font-size: 13px;">This is a simplified version of the website with no active updates. See the
+              <a href="#">Site Information Page</a> for contact information, data downloads, and other details. </p>
+          </div>
+        </div>
           <div class="header-content">
             <nav class="extraMenu" aria-label="Supplmentary Info">
               <ul>
@@ -90,7 +97,7 @@
 
         </div>
         </header>
-        <main>
+        <main id="main_content">
 <div class="bodyContent" id="main_content">
           <div id="mainContent">
 
