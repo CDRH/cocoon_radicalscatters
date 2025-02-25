@@ -20,6 +20,25 @@ main, footer, .landmark-wrapper {
   height:500px;
 }
 
+.green-banner-wrapper {
+  background-color: #e0deb8;
+  padding: 10px;
+}
+
+.green-banner {
+  background-color: #bbdfbb;
+  border: 2px solid #466f46;
+  border-radius: 3px;
+  padding: 10px 20px;
+  margin: auto;
+  width: 1000px;
+}
+
+.green-banner p {
+  font-size: 13px;
+  margin: 0;
+}
+
 .green-banner p a,
 .green-banner p a:visited {
   color: #0000EE;
