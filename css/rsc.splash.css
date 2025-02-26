@@ -20,12 +20,12 @@ main, footer, .landmark-wrapper {
   height:500px;
 }
 
-.green-banner-wrapper {
+.static-banner-wrapper {
   background-color: #e0deb8;
   padding: 10px;
 }
 
-.green-banner {
+.static-banner {
   background-color: #bbdfbb;
   border: 2px solid #466f46;
   border-radius: 3px;
@@ -34,13 +34,13 @@ main, footer, .landmark-wrapper {
   width: 1000px;
 }
 
-.green-banner p {
+.static-banner p {
   font-size: 13px;
   margin: 0;
 }
 
-.green-banner p a,
-.green-banner p a:visited {
+.static-banner p a,
+.static-banner p a:visited {
   color: #0000EE;
   background: none;
   margin: 0;
@@ -48,7 +48,7 @@ main, footer, .landmark-wrapper {
   text-decoration: underline;
 }
 
-.green-banner p a:hover {
+.static-banner p a:hover {
   background: none;
   color: #010194;
   margin: 0;
