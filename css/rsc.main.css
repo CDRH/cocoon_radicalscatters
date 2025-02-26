@@ -25,7 +25,7 @@ body {
 }
 #bodyContent2, 
 .bodyContent2, 
-header, 
+.header, 
 main, 
 footer {
     background-color:#000;
@@ -48,15 +48,15 @@ footer .bodyContent {
 }
 
 .static-banner-wrapper {
-  background-color: #3c382f;
-  padding: 10px;
+  background-color: #cce5f2;
+  border-bottom: 1px solid #226e95;
 }
 
 .static-banner {
-  background-color: #bbdfbb;
-  border: 2px solid #466f46;
-  border-radius: 3px;
+  margin: auto;
+  max-width: 100%;
   padding: 10px 20px;
+  width: 1000px;
 }
 
 .static-banner p {

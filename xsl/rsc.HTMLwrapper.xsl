@@ -43,13 +43,14 @@
       <body>
            <header>
       <a class="sr-only sr-only-focusable" href="#main_content">Skip to main content</a>
-      <div class="bodyContent">
-      <div class="static-banner-wrapper">
+            <div class="static-banner-wrapper">
           <div class="static-banner">
             <p>This is a simplified version of the website with no active updates. See the
               <a href="#">Site Information Page</a> for contact information, data downloads, and other details.</p>
           </div>
         </div>
+      <div class="header">
+            <div class="bodyContent">
           <div class="header-content">
             <nav class="extraMenu" aria-label="Supplementary Info">
               <ul>
@@ -95,6 +96,7 @@
           </div>
 
         </div>
+      </div>
         </header>
         <main id="main_content">
 <div class="bodyContent" id="main_content">
